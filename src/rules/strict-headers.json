@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "priority": 20,
+    "action": {"type": "modifyHeaders", "requestHeaders": [{"header": "cookie", "operation": "remove"}]},
+    "condition": {"domainType": "thirdParty", "resourceTypes": ["sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "media", "websocket", "webtransport", "other"]}
+  },
+  {
+    "id": 2,
+    "priority": 20,
+    "action": {"type": "modifyHeaders", "responseHeaders": [{"header": "set-cookie", "operation": "remove"}]},
+    "condition": {"domainType": "thirdParty", "resourceTypes": ["sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "media", "websocket", "webtransport", "other"]}
+  },
+  {
+    "id": 3,
+    "priority": 20,
+    "action": {"type": "modifyHeaders", "requestHeaders": [{"header": "referer", "operation": "remove"}]},
+    "condition": {"domainType": "thirdParty", "resourceTypes": ["sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "media", "websocket", "webtransport", "other"]}
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {"id":1,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["fbclid"]}}}},"condition":{"regexFilter":"[?&]fbclid=","resourceTypes":["main_frame"]}},
+  {"id":2,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["gclid"]}}}},"condition":{"regexFilter":"[?&]gclid=","resourceTypes":["main_frame"]}},
+  {"id":3,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["dclid"]}}}},"condition":{"regexFilter":"[?&]dclid=","resourceTypes":["main_frame"]}},
+  {"id":4,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["gbraid"]}}}},"condition":{"regexFilter":"[?&]gbraid=","resourceTypes":["main_frame"]}},
+  {"id":5,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["wbraid"]}}}},"condition":{"regexFilter":"[?&]wbraid=","resourceTypes":["main_frame"]}},
+  {"id":6,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["msclkid"]}}}},"condition":{"regexFilter":"[?&]msclkid=","resourceTypes":["main_frame"]}},
+  {"id":7,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["utm_source"]}}}},"condition":{"regexFilter":"[?&]utm_source=","resourceTypes":["main_frame"]}},
+  {"id":8,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["utm_medium"]}}}},"condition":{"regexFilter":"[?&]utm_medium=","resourceTypes":["main_frame"]}},
+  {"id":9,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["utm_campaign"]}}}},"condition":{"regexFilter":"[?&]utm_campaign=","resourceTypes":["main_frame"]}},
+  {"id":10,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["utm_term"]}}}},"condition":{"regexFilter":"[?&]utm_term=","resourceTypes":["main_frame"]}},
+  {"id":11,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["utm_content"]}}}},"condition":{"regexFilter":"[?&]utm_content=","resourceTypes":["main_frame"]}},
+  {"id":12,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["utm_id"]}}}},"condition":{"regexFilter":"[?&]utm_id=","resourceTypes":["main_frame"]}},
+  {"id":13,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["utm_name"]}}}},"condition":{"regexFilter":"[?&]utm_name=","resourceTypes":["main_frame"]}},
+  {"id":14,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["mc_cid"]}}}},"condition":{"regexFilter":"[?&]mc_cid=","resourceTypes":["main_frame"]}},
+  {"id":15,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["mc_eid"]}}}},"condition":{"regexFilter":"[?&]mc_eid=","resourceTypes":["main_frame"]}},
+  {"id":16,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["_ga"]}}}},"condition":{"regexFilter":"[?&]_ga=","resourceTypes":["main_frame"]}},
+  {"id":17,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["_gl"]}}}},"condition":{"regexFilter":"[?&]_gl=","resourceTypes":["main_frame"]}},
+  {"id":18,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["igshid"]}}}},"condition":{"regexFilter":"[?&]igshid=","resourceTypes":["main_frame"]}},
+  {"id":19,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["mkt_tok"]}}}},"condition":{"regexFilter":"[?&]mkt_tok=","resourceTypes":["main_frame"]}},
+  {"id":20,"priority":50,"action":{"type":"redirect","redirect":{"transform":{"queryTransform":{"removeParams":["yclid"]}}}},"condition":{"regexFilter":"[?&]yclid=","resourceTypes":["main_frame"]}}
+]

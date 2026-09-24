@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suvi Shield</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div class="brand">
+          <img src="../assets/icon-48.png" alt="" width="32" height="32" />
+          <div>
+            <strong>Suvi Shield</strong>
+            <span>Fortress firewall</span>
+          </div>
+        </div>
+        <label class="switch" title="Master protection">
+          <input id="master-toggle" type="checkbox" />
+          <span aria-hidden="true"></span>
+        </label>
+      </header>
+
+      <section class="hero" aria-labelledby="site-name">
+        <div class="pulse" aria-hidden="true"><span></span></div>
+        <p id="protection-label">Checking protection...</p>
+        <h1 id="site-name">Current site</h1>
+        <button id="site-toggle" class="site-action" type="button" disabled>Pause on this site</button>
+      </section>
+
+      <section class="metric-grid" aria-label="Protection status">
+        <article>
+          <strong id="action-count">-</strong>
+          <span>actions / 5 min</span>
+        </article>
+        <article>
+          <strong id="ruleset-count">-</strong>
+          <span>active layers</span>
+        </article>
+      </section>
+
+      <section class="profiles" aria-labelledby="profiles-title">
+        <div class="section-title">
+          <h2 id="profiles-title">Protection level</h2>
+          <span id="mode-label">Hard</span>
+        </div>
+        <div class="profile-selector" role="radiogroup" aria-label="Choose protection level">
+          <button type="button" data-profile="normal" role="radio" aria-checked="false"><i></i><span>Normal</span></button>
+          <button type="button" data-profile="medium" role="radio" aria-checked="false"><i></i><span>Medium</span></button>
+          <button type="button" data-profile="hard" role="radio" aria-checked="false"><i></i><span>Hard</span></button>
+          <button type="button" data-profile="extreme" role="radio" aria-checked="false"><i></i><span>Extreme</span></button>
+        </div>
+        <article id="profile-explainer" class="profile-explainer">
+          <div>
+            <strong id="profile-title">Strict browser shield</strong>
+            <small id="profile-description">Loading protection details...</small>
+          </div>
+          <div id="profile-features" class="profile-features" aria-label="Enabled protections"></div>
+          <p id="profile-tradeoff"></p>
+        </article>
+      </section>
+
+      <section class="layers" aria-labelledby="layers-title">
+        <div class="section-title">
+          <h2 id="layers-title">Defense layers</h2>
+          <span>Live status</span>
+        </div>
+        <div class="layer-grid">
+          <span data-layer="ads"><i></i>Ads</span>
+          <span data-layer="trackers"><i></i>Trackers</span>
+          <span data-layer="malware"><i></i>Threats</span>
+          <span data-layer="annoyances"><i></i>Annoyances</span>
+          <span data-layer="extremeMode"><i></i>Fortress</span>
+          <span data-layer="trackingParams"><i></i>Link cleanup</span>
+          <span data-layer="youtubeProtection"><i></i>YouTube Clean Player</span>
+        </div>
+      </section>
+
+      <p id="error" class="error" role="status" hidden></p>
+      <button id="open-options" class="control-center" type="button">
+        Open control center <span aria-hidden="true">&gt;</span>
+      </button>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

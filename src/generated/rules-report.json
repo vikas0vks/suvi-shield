@@ -1,0 +1,305 @@
+{
+  "generatedAt": "2026-09-24T07:01:32.567Z",
+  "starterOnly": false,
+  "sources": [
+    {
+      "id": "easylist",
+      "title": "EasyList",
+      "category": "ads",
+      "url": "https://easylist.to/easylist/easylist.txt",
+      "homepage": "https://easylist.to/",
+      "license": "GPL-3.0-or-later AND CC-BY-SA-3.0",
+      "fallback": false,
+      "bytes": 2193554,
+      "sha256": "cd19006e487a80c26232a84238469199baea8689ba075f6cf5ee11c82dd2eb0c"
+    },
+    {
+      "id": "ublock-filters",
+      "title": "uBlock filters - Ads",
+      "category": "ads",
+      "url": "https://ublockorigin.github.io/uAssets/filters/filters.txt",
+      "homepage": "https://github.com/uBlockOrigin/uAssets",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 474307,
+      "sha256": "9488bbf2621dc1150ac207f0a853d62b30972160b86df7785c521c9ecbffd714"
+    },
+    {
+      "id": "adguard-base",
+      "title": "AdGuard Base filter",
+      "category": "ads",
+      "url": "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt",
+      "homepage": "https://github.com/AdguardTeam/AdguardFilters",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 4265851,
+      "sha256": "cdf5c502655ff7f2ca9abe1b009f8c576d3ee040322cd9e2961baf469351a8c5"
+    },
+    {
+      "id": "adguard-mobile",
+      "title": "AdGuard Mobile Ads filter",
+      "category": "ads",
+      "url": "https://filters.adtidy.org/extension/ublock/filters/11.txt",
+      "homepage": "https://github.com/AdguardTeam/AdguardFilters",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 524632,
+      "sha256": "f7acc96f643e9dd6f2a43c277e6ef9d0ff201d8bc21a8083e6f0792a396bd204"
+    },
+    {
+      "id": "plowe",
+      "title": "Peter Lowe's ad and tracking server list",
+      "category": "ads",
+      "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+      "homepage": "https://pgl.yoyo.org/adservers/",
+      "license": "McRae GPL; non-commercial",
+      "fallback": false,
+      "bytes": 95130,
+      "sha256": "cf2e56eb7f0036110f638faa3266e5ed7ef4ddc353a7d828e6de87efe64b08ba"
+    },
+    {
+      "id": "onehosts-lite",
+      "title": "1Hosts (Lite)",
+      "category": "ads",
+      "url": "https://badmojr.github.io/1Hosts/Lite/adblock.txt",
+      "homepage": "https://github.com/badmojr/1Hosts",
+      "license": "See source repository terms",
+      "fallback": false,
+      "bytes": 2347853,
+      "sha256": "f2d89a0f4b60d420a852419352473c2d3bde02b4a9772dd2cc7eb448200bd070"
+    },
+    {
+      "id": "oisd-big",
+      "title": "OISD Big",
+      "category": "ads",
+      "url": "https://big.oisd.nl/",
+      "homepage": "https://oisd.nl/",
+      "license": "GPL-3.0",
+      "fallback": false,
+      "bytes": 5740311,
+      "sha256": "1f2b8df131f3f87511005c05319da143d3b3816a0c3ed75bc540b853a78d2880"
+    },
+    {
+      "id": "fanboy-indian",
+      "title": "Fanboy's Indian filter (IndianList)",
+      "category": "ads",
+      "url": "https://easylist-downloads.adblockplus.org/indianlist.txt",
+      "homepage": "https://easylist.to/",
+      "license": "GPL-3.0-or-later AND CC-BY-SA-3.0",
+      "fallback": false,
+      "bytes": 647206,
+      "sha256": "3470103160924204f17b8f6370a2c7bd3eeb580c80eadf27c383f5ffa6209716"
+    },
+    {
+      "id": "adguard-turkish",
+      "title": "AdGuard Turkish filter",
+      "category": "ads",
+      "url": "https://filters.adtidy.org/extension/ublock/filters/13.txt",
+      "homepage": "https://github.com/AdguardTeam/AdguardFilters",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 504652,
+      "sha256": "99761c89185e67355c2608ed77937cce1119c0f4a70cdce2ccf36f6204f20b66"
+    },
+    {
+      "id": "abpindo",
+      "title": "ABPindo Indonesian filter",
+      "category": "ads",
+      "url": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt",
+      "homepage": "https://github.com/ABPindo/indonesianadblockrules",
+      "license": "GPL-3.0-or-later AND CC-BY-SA-3.0",
+      "fallback": false,
+      "bytes": 314307,
+      "sha256": "7a4ca03e41494987bd570d557dd13f892bb99ad25defce9acfbcef105186cf76"
+    },
+    {
+      "id": "adguard-russian",
+      "title": "AdGuard Russian filter",
+      "category": "ads",
+      "url": "https://filters.adtidy.org/extension/ublock/filters/1.txt",
+      "homepage": "https://github.com/AdguardTeam/AdguardFilters",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 920686,
+      "sha256": "c999b681b098605cf24441b1ed0631ddb30cb38e473f1ceb78e58faa07defe0c"
+    },
+    {
+      "id": "adguard-spanish-portuguese",
+      "title": "AdGuard Spanish/Portuguese filter",
+      "category": "ads",
+      "url": "https://filters.adtidy.org/extension/ublock/filters/9.txt",
+      "homepage": "https://github.com/AdguardTeam/AdguardFilters",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 361225,
+      "sha256": "fe005b594859f2a0f4a32031625d0e2d6bb1f3fbfa2a7643fca46e8f7c0f3749"
+    },
+    {
+      "id": "easylist-germany",
+      "title": "EasyList Germany",
+      "category": "ads",
+      "url": "https://easylist.to/easylistgermany/easylistgermany.txt",
+      "homepage": "https://easylist.to/",
+      "license": "GPL-3.0-or-later AND CC-BY-SA-3.0",
+      "fallback": false,
+      "bytes": 277438,
+      "sha256": "7ef61329584794d1c5d73ea7124836c5a1ec1322eae0022287b091a1677bf1ec"
+    },
+    {
+      "id": "easyprivacy",
+      "title": "EasyPrivacy",
+      "category": "privacy",
+      "url": "https://easylist.to/easylist/easyprivacy.txt",
+      "homepage": "https://easylist.to/",
+      "license": "GPL-3.0-or-later AND CC-BY-SA-3.0",
+      "fallback": false,
+      "bytes": 1505544,
+      "sha256": "23042c6f8fb5148338dc8f15ed47cdefb6686cd0a13597994fbf1a12e5e0a5fe"
+    },
+    {
+      "id": "ublock-privacy",
+      "title": "uBlock filters - Privacy",
+      "category": "privacy",
+      "url": "https://ublockorigin.github.io/uAssets/filters/privacy.txt",
+      "homepage": "https://github.com/uBlockOrigin/uAssets",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 182980,
+      "sha256": "1e578a47b4c05a33d7bb882fc162d302399be8f747558c0120bd05d14df3f27f"
+    },
+    {
+      "id": "ublock-resource-abuse",
+      "title": "uBlock filters - Resource abuse",
+      "category": "privacy",
+      "url": "https://ublockorigin.github.io/uAssets/filters/resource-abuse.txt",
+      "homepage": "https://github.com/uBlockOrigin/uAssets",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 9200,
+      "sha256": "f59488a7913fa4a9165788d3733b00d17bbc8d25fe7e1d4a2fdf4ef5c5f31015"
+    },
+    {
+      "id": "ublock-badware",
+      "title": "uBlock filters - Badware risks",
+      "category": "security",
+      "url": "https://ublockorigin.github.io/uAssets/filters/badware.txt",
+      "homepage": "https://github.com/uBlockOrigin/uAssets",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 258438,
+      "sha256": "a028034985168049b87989a831d4d4ae7fe9f9ebd226e573073d8350de25321a"
+    },
+    {
+      "id": "urlhaus",
+      "title": "Online Malicious URL Blocklist",
+      "category": "security",
+      "url": "https://malware-filter.gitlab.io/urlhaus-filter/urlhaus-filter-ag-online.txt",
+      "homepage": "https://gitlab.com/malware-filter/urlhaus-filter",
+      "license": "CC0-1.0",
+      "fallback": false,
+      "bytes": 847002,
+      "sha256": "003dba8641e175d342b3ecac53f6fc9f8dcdb2804a371e7bb24046b3fe2fa037"
+    },
+    {
+      "id": "adguard-annoyances",
+      "title": "AdGuard Annoyances filter",
+      "category": "annoyances",
+      "url": "https://filters.adtidy.org/extension/ublock/filters/14.txt",
+      "homepage": "https://github.com/AdguardTeam/AdguardFilters",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 4087094,
+      "sha256": "0588adc11c82acc7f0834f4e7e1786065d3cf5755c85da1cfd4511d1d069bb5a"
+    },
+    {
+      "id": "fanboy-annoyance",
+      "title": "Fanboy's Annoyance List",
+      "category": "annoyances",
+      "url": "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
+      "homepage": "https://easylist.to/",
+      "license": "CC-BY-3.0",
+      "fallback": false,
+      "bytes": 2166559,
+      "sha256": "cf1faf11f5286307dc562be77c3291133a1b9e2976d42a7b17c2d05103b67441"
+    },
+    {
+      "id": "ublock-annoyances",
+      "title": "uBlock filters - Annoyances",
+      "category": "annoyances",
+      "url": "https://ublockorigin.github.io/uAssets/filters/annoyances-others.txt",
+      "homepage": "https://github.com/uBlockOrigin/uAssets",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 417115,
+      "sha256": "29e60b0f77c9df588b254ed51bc13ab6064d1e50502eb236c2162107ac82e744"
+    },
+    {
+      "id": "easylist-cookie",
+      "title": "EasyList Cookie Notices",
+      "category": "annoyances",
+      "url": "https://ublockorigin.github.io/uAssets/thirdparties/easylist-cookies.txt",
+      "homepage": "https://easylist.to/",
+      "license": "GPL-3.0-or-later AND CC-BY-SA-3.0",
+      "fallback": false,
+      "bytes": 1209348,
+      "sha256": "f488da32569d24bcad7dfe5066bd17285072a7ab404ff25e290b05b9bbc54be3"
+    },
+    {
+      "id": "ublock-unbreak",
+      "title": "uBlock filters - Unbreak",
+      "category": "annoyances",
+      "url": "https://ublockorigin.github.io/uAssets/filters/unbreak.txt",
+      "homepage": "https://github.com/uBlockOrigin/uAssets",
+      "license": "GPL-3.0-or-later",
+      "fallback": false,
+      "bytes": 280386,
+      "sha256": "5c6792d57427b9f1c8a055de15209b3699bf79dab3a243cc1667d568603a6d16"
+    },
+    {
+      "id": "adblock-warning-removal",
+      "title": "Adblock Warning Removal List",
+      "category": "annoyances",
+      "url": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
+      "homepage": "https://easylist.to/",
+      "license": "GPL-3.0-or-later AND CC-BY-SA-3.0",
+      "fallback": false,
+      "bytes": 72736,
+      "sha256": "5a7435a7ed37f20bb02e920e4f0ddddb0aed40925fd1910d825035b1d18240e5"
+    }
+  ],
+  "network": {
+    "ads": {
+      "inputLines": 589155,
+      "parsed": 453833,
+      "skipped": 135322,
+      "emitted": 12000,
+      "capped": true
+    },
+    "privacy": {
+      "inputLines": 60541,
+      "parsed": 57042,
+      "skipped": 3499,
+      "emitted": 6500,
+      "capped": true
+    },
+    "annoyances": {
+      "inputLines": 169117,
+      "parsed": 16795,
+      "skipped": 152322,
+      "emitted": 5000,
+      "capped": true
+    },
+    "security": {
+      "inputLines": 15987,
+      "parsed": 13382,
+      "skipped": 2605,
+      "emitted": 3000,
+      "capped": true
+    }
+  },
+  "cosmetic": {
+    "parsed": 199735,
+    "generic": 5000,
+    "domains": 89183
+  }
+}

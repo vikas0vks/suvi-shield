@@ -1,0 +1,33 @@
+{
+  "ads": [
+    "||doubleclick.net^$third-party",
+    "||googlesyndication.com^$third-party",
+    "||googleadservices.com^$third-party",
+    "||amazon-adsystem.com^$third-party",
+    "||criteo.com^$third-party",
+    "||taboola.com^$third-party",
+    "||outbrain.com^$third-party",
+    "||adnxs.com^$third-party",
+    "##.ad-banner",
+    "##[aria-label=\"Advertisement\"]"
+  ],
+  "privacy": [
+    "||google-analytics.com^$third-party",
+    "||googletagmanager.com^$third-party",
+    "||facebook.net^$third-party",
+    "||segment.io^$third-party",
+    "||hotjar.com^$third-party",
+    "||mixpanel.com^$third-party",
+    "||amplitude.com^$third-party",
+    "||clarity.ms^$third-party"
+  ],
+  "annoyances": [
+    "##.cookie-banner",
+    "##.cookie-consent",
+    "##.newsletter-modal",
+    "##[data-testid=\"cookie-policy-dialog\"]"
+  ],
+  "security": [
+    "||malware.test^$document"
+  ]
+}

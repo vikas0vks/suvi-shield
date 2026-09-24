@@ -1,0 +1,8 @@
+node_modules/
+dist/
+release/
+coverage/
+.cache/
+*.log
+src/generated/cosmetic/*.json
+!src/generated/cosmetic/.gitkeep

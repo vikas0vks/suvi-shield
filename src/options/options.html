@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suvi Shield | Control Center</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="#overview" aria-label="Suvi Shield home">
+        <img src="../assets/icon-48.png" width="36" height="36" alt="" />
+        <span><strong>Suvi Shield</strong><small>Fortress Control</small></span>
+      </a>
+      <div class="status"><i></i><span id="save-state">Protected locally</span></div>
+    </header>
+
+    <div class="layout">
+      <nav aria-label="Settings sections">
+        <a class="active" href="#overview">Overview</a>
+        <a href="#network">Network firewall</a>
+        <a href="#filters">Filter arsenal</a>
+        <a href="#browser">Browser hardening</a>
+        <a href="#sites">Site controls</a>
+        <a href="#data">Data & recovery</a>
+      </nav>
+
+      <main>
+        <section id="overview" class="hero-card">
+          <div>
+            <p>EXTREME LOCAL-FIRST FIREWALL</p>
+            <h1>Kill the noise.<br /><span>Lock the page.</span></h1>
+            <p class="lede">24 maintained filter sources, new-tab lockdown and dangerous-capability denial. Nothing leaves this device.</p>
+          </div>
+          <div class="shield-orbit" aria-hidden="true"><img src="../assets/icon-128.png" alt="" /></div>
+        </section>
+
+        <section id="network" class="panel">
+          <div class="panel-heading">
+            <div><p>CORE</p><h2>Network firewall</h2></div>
+            <span class="chip">Browser-native DNR</span>
+          </div>
+          <div class="setting-list">
+            <label class="risk"><span><strong>Fortress network mode</strong><small>Block third-party scripts, frames, objects and socket transports; deny beacons and force HTTPS. May break embeds, SSO and payments.</small></span><input data-setting="extremeMode" type="checkbox" /></label>
+            <label><span><strong>Ads</strong><small>Known ad delivery and measurement endpoints.</small></span><input data-setting="ads" type="checkbox" /></label>
+            <label><span><strong>Trackers</strong><small>Cross-site analytics, pixels, beacons and telemetry.</small></span><input data-setting="trackers" type="checkbox" /></label>
+            <label><span><strong>Malware & abuse</strong><small>Badware, phishing and hostile infrastructure lists.</small></span><input data-setting="malware" type="checkbox" /></label>
+            <label><span><strong>Annoyances</strong><small>Cookie walls, overlays, social widgets and nagware.</small></span><input data-setting="annoyances" type="checkbox" /></label>
+            <label><span><strong>Tracking parameter removal</strong><small>Strip common campaign identifiers before navigation.</small></span><input data-setting="trackingParams" type="checkbox" /></label>
+            <label class="risk"><span><strong>Strict third-party headers</strong><small>Remove third-party cookies and referrers. May break SSO and payments.</small></span><input data-setting="strictCookies" type="checkbox" /></label>
+          </div>
+        </section>
+
+        <section id="filters" class="panel">
+          <div class="panel-heading">
+            <div><p>HOSTS & FILTERS</p><h2>Filter arsenal</h2></div>
+            <span id="filter-summary" class="chip">Loading verified sources...</span>
+          </div>
+          <p class="muted catalog-note">Sources are compiled, deduplicated and quota-capped during the signed build. Their group switches live under Network firewall.</p>
+          <div id="filter-catalog" class="filter-catalog" aria-live="polite"></div>
+        </section>
+
+        <section id="browser" class="panel">
+          <div class="panel-heading"><div><p>PAGE LAYER</p><h2>Browser hardening</h2></div></div>
+          <div class="setting-list">
+            <label><span><strong>Cosmetic filtering</strong><small>Hide page elements using compiled, site-scoped selectors.</small></span><input data-setting="cosmeticFiltering" type="checkbox" /></label>
+            <label><span><strong>YouTube Clean Player</strong><small>Hide promoted slots and skip or accelerate detected in-player ads without changing normal video playback.</small></span><input data-setting="youtubeProtection" type="checkbox" /></label>
+            <label class="risk"><span><strong>New-tab lockdown</strong><small>Block window.open, target=_blank, form targets, middle/Ctrl-click routes and popunder exit traps.</small></span><input data-setting="popupDefense" type="checkbox" /></label>
+            <label><span><strong>Link sanitization</strong><small>Remove trackers, ping URLs and unsafe opener relationships.</small></span><input data-setting="linkSanitization" type="checkbox" /></label>
+            <label class="risk"><span><strong>Fingerprint normalization</strong><small>Experimental canvas, WebGL and hardware normalization. Can break graphics tools.</small></span><input data-setting="fingerprintDefense" type="checkbox" /></label>
+            <label class="risk"><span><strong>WebRTC IP protection</strong><small>Disable non-proxied UDP. Can affect calls and local-device discovery.</small></span><input data-setting="webrtcProtection" type="checkbox" /></label>
+          </div>
+        </section>
+
+        <section id="sites" class="panel split-panel">
+          <div>
+            <div class="panel-heading"><div><p>EXCEPTIONS</p><h2>Trusted sites</h2></div></div>
+            <form id="allowlist-form" class="domain-form">
+              <label for="allowlist-input">Domain or URL</label>
+              <div><input id="allowlist-input" type="text" placeholder="example.com" autocomplete="off" /><button type="submit">Add</button></div>
+            </form>
+            <ul id="allowlist" class="domain-list"></ul>
+          </div>
+          <div>
+            <div class="panel-heading"><div><p>CUSTOM</p><h2>Always block</h2></div></div>
+            <form id="blocklist-form" class="domain-form">
+              <label for="blocklist-input">Domain or URL</label>
+              <div><input id="blocklist-input" type="text" placeholder="tracker.example" autocomplete="off" /><button type="submit">Block</button></div>
+            </form>
+            <ul id="blocklist" class="domain-list"></ul>
+          </div>
+        </section>
+
+        <section id="data" class="panel data-panel">
+          <div><p>PORTABILITY</p><h2>Data & recovery</h2><p class="muted">Exports contain settings and site rules only, never browsing history.</p></div>
+          <div class="button-row">
+            <button id="export" type="button">Export settings</button>
+            <label class="button">Import settings<input id="import" type="file" accept="application/json" /></label>
+            <button id="reset" class="danger" type="button">Reset</button>
+          </div>
+        </section>
+
+        <p id="error" class="error" role="status" hidden></p>
+        <footer>Suvi Shield v<span id="version"></span> | no telemetry | no acceptable-ads program</footer>
+      </main>
+    </div>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

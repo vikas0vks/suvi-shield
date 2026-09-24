@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "priority": 700,
+    "action": {"type": "block"},
+    "condition": {
+      "domainType": "thirdParty",
+      "resourceTypes": ["sub_frame", "script", "object", "websocket", "webtransport", "webbundle"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 725,
+    "action": {"type": "block"},
+    "condition": {"resourceTypes": ["ping", "csp_report"]}
+  },
+  {
+    "id": 3,
+    "priority": 650,
+    "action": {"type": "upgradeScheme"},
+    "condition": {
+      "urlFilter": "|http://",
+      "excludedRequestDomains": ["localhost", "127.0.0.1"],
+      "resourceTypes": ["main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "media", "websocket", "webtransport", "webbundle", "other"]
+    }
+  }
+]
