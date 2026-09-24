@@ -1,41 +1,74 @@
 <p align="center">
-  <img src="src/assets/icon-128.png" width="112" height="112" alt="Suvi Shield logo">
+  <img src=".github/assets/suvi-shield-hero.svg" width="100%" alt="Suvi Shield local-first browser firewall">
 </p>
 
-<h1 align="center">Suvi Shield</h1>
+# Suvi Shield
 
 <p align="center">
-  A local-first Chrome ad blocker, tracker blocker and privacy extension built for Manifest V3.
+  <a href="https://github.com/vikas0vks/suvi-shield/releases/latest"><img src="https://img.shields.io/github/v/release/vikas0vks/suvi-shield?label=latest%20release&color=24c997" alt="Latest release"></a>
+  <a href="https://github.com/vikas0vks/suvi-shield/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/vikas0vks/suvi-shield/ci.yml?branch=main&label=build&color=24c997" alt="Build status"></a>
+  <img src="https://img.shields.io/badge/Manifest-V3-339cf4" alt="Manifest V3">
+  <img src="https://img.shields.io/badge/default-Hard-f2ad4a" alt="Hard is the default profile">
+  <img src="https://img.shields.io/badge/telemetry-none-24c997" alt="No telemetry">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-667eea" alt="GPL 3.0 license"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/vikas0vks/suvi-shield/releases/latest"><img src="https://img.shields.io/github/v/release/vikas0vks/suvi-shield?label=release" alt="Latest release"></a>
-  <a href="https://github.com/vikas0vks/suvi-shield/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/vikas0vks/suvi-shield/ci.yml?branch=main&label=build" alt="Build status"></a>
-  <img src="https://img.shields.io/badge/Chrome-120%2B-4285F4" alt="Chrome 120 or newer">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-blue" alt="GPL 3.0 license"></a>
+  <strong>Open-source ad blocking, tracker protection and browser hardening for Chrome and Chromium.</strong>
 </p>
 
-Suvi Shield blocks ads, trackers, malicious domains, popups, tracking links and common browser abuse while keeping all protection logic on the device. It includes dedicated YouTube ad handling, four protection profiles, per-site controls and more than 26,000 compiled browser rules.
+<p align="center">
+  <a href="https://github.com/vikas0vks/suvi-shield/releases/latest"><strong>Download latest release</strong></a>
+  &nbsp; | &nbsp;
+  <a href="#install">Install</a>
+  &nbsp; | &nbsp;
+  <a href="#protection-profiles">Profiles</a>
+  &nbsp; | &nbsp;
+  <a href="PRIVACY.md">Privacy</a>
+</p>
 
-The default profile is **Hard**. It provides strict protection without enabling the most breakage-prone Extreme network restrictions. Users can switch profiles at any time from the extension popup.
+Suvi Shield is a local-first Chrome ad blocker and privacy extension built for Manifest V3. It blocks ads, trackers, malicious domains, popups, tracking links and common browser abuse without sending browsing activity to a remote service. The extension also includes playback-safe YouTube protection, per-site controls and four configurable protection profiles.
 
-## Download
+## Product preview
 
-Download the current Chromium package from the [latest release](https://github.com/vikas0vks/suvi-shield/releases/latest).
+<table>
+  <tr>
+    <td width="34%" align="center" valign="top">
+      <img src=".github/assets/popup-hard.png" alt="Suvi Shield popup showing the default Hard protection profile">
+      <br>
+      <sub>Default Hard profile with live defense status</sub>
+    </td>
+    <td width="66%" align="center" valign="top">
+      <img src=".github/assets/control-center.png" alt="Suvi Shield control center">
+      <br>
+      <sub>Local control center for network, page and site protection</sub>
+    </td>
+  </tr>
+</table>
 
-## Main features
+## At a glance
 
-- Browser-native Manifest V3 network filtering
-- Ad, tracker, analytics and beacon blocking
-- Malicious URL and badware domain protection
-- YouTube promoted-content cleanup and in-player ad handling
-- Popup, popunder and unwanted new-tab prevention
-- Tracking parameter removal and safer outbound links
-- Cookie banner, overlay and page-annoyance filtering
-- Per-site pause and custom domain blocking
-- WebRTC IP protection
-- Canvas, WebGL and hardware fingerprint normalization
-- No telemetry, accounts, remote executable code or acceptable-ads program
+<table>
+  <tr>
+    <td align="center"><strong>26,526</strong><br><sub>Network rules</sub></td>
+    <td align="center"><strong>24</strong><br><sub>Maintained filter sources</sub></td>
+    <td align="center"><strong>4</strong><br><sub>Protection profiles</sub></td>
+    <td align="center"><strong>0</strong><br><sub>Telemetry events</sub></td>
+  </tr>
+</table>
+
+## Protection system
+
+| Network protection | Page protection |
+| --- | --- |
+| Ads, trackers, analytics and beacons | Cosmetic ad and annoyance cleanup |
+| Malicious URL and badware domains | Popup, popunder and new-tab lockdown |
+| Tracking parameter removal | YouTube Clean Player |
+| Strict third-party cookie and referrer controls | Link cleanup and opener hardening |
+| Optional third-party active-content blocking | Canvas, WebGL and hardware normalization |
+| WebRTC non-proxied UDP protection | Per-site pause and custom domain controls |
+
+Suvi Shield has no accounts, telemetry, remote executable code or acceptable-ads program. Settings, trusted sites and custom blocks stay in local browser storage.
 
 ## Protection profiles
 
@@ -43,28 +76,31 @@ Download the current Chromium package from the [latest release](https://github.c
 | --- | --- | --- |
 | Normal | Ads, trackers, threats, YouTube Clean Player, cosmetic filtering and link cleanup | Highest |
 | Medium | Normal plus annoyance filtering and WebRTC protection | High |
-| Hard | Medium plus new-tab lockdown, strict headers and fingerprint protection | Recommended default |
+| **Hard** | Medium plus new-tab lockdown, strict headers and fingerprint protection | **Recommended default** |
 | Extreme | Hard plus third-party active-content blocking and capability restrictions | Lowest |
 
-Changing an individual setting creates a Custom profile. Trusted sites and custom blocked domains are preserved when a named profile is selected.
+Hard is enabled on every fresh installation. Extreme remains available for users who accept a higher chance of site breakage. Changing an individual switch creates a Custom profile without overwriting trusted sites or custom blocked domains.
 
-## YouTube protection
+## YouTube Clean Player
 
-YouTube Clean Player removes known promoted surfaces and reacts only when the player reports an active ad. It can press available skip controls, mute and accelerate ad media, and restore the original playback state when the ad ends. Normal video playback is not modified when no ad state is present.
+The dedicated YouTube layer removes known promoted surfaces and reacts only when the player reports an active ad. It can press available skip controls, mute and accelerate ad media, and restore the original playback state when the ad ends. Normal video playback is not modified when no ad state is present.
 
-YouTube changes frequently, so no browser extension can promise permanent coverage for every ad format. The implementation avoids response-body rewriting because that approach can damage normal playback and autoplay behavior.
+YouTube changes frequently, so permanent coverage for every ad format cannot be guaranteed. Suvi Shield avoids response-body rewriting because that approach can damage normal playback and autoplay behavior.
 
-## Install in Chrome
+## Install
 
-1. Download `suvi-shield-0.4.0-chromium.zip` from the latest release.
+> [Download the current Chromium package](https://github.com/vikas0vks/suvi-shield/releases/latest)
+
+1. Download the `suvi-shield` Chromium ZIP from the latest release.
 2. Extract the ZIP file to a permanent folder.
 3. Open `chrome://extensions` in Chrome or another Chromium browser.
 4. Enable Developer mode.
-5. Select Load unpacked and choose the extracted folder.
+5. Select **Load unpacked** and choose the extracted folder.
 
 Chrome does not load an unpacked extension directly from a ZIP file. Keep the extracted folder after installation.
 
-## Build from source
+<details>
+<summary><strong>Build from source</strong></summary>
 
 Requirements:
 
@@ -84,27 +120,32 @@ The unpacked extension is written to `dist/`. The release archive is written to 
 
 For an offline development build, use `npm run rules:starter`. Public release builds must use the maintained filter sources and pass `npm run validate:release`.
 
-## Quality checks
+</details>
 
-The release pipeline verifies:
+<details>
+<summary><strong>Quality gates</strong></summary>
 
-- ESLint and strict TypeScript checks
+Every release is checked with:
+
+- ESLint and strict TypeScript validation
 - Unit tests for settings, domains, messages and URL cleanup
-- Manifest resources and static DNR limits
-- Protection profile registration and Custom mode
-- Popup and unwanted new-tab blocking paths
-- YouTube ad-state handling and playback-state restoration
-- Live YouTube content playback when the optional network test is enabled
+- Manifest resource and static DNR limit validation
+- Protection profile and Custom mode verification
+- Popup and unwanted new-tab browser tests
+- YouTube ad-state handling and playback restoration tests
 - Release filter integrity and fallback detection
 
-Run the optional live playback check with:
+Optional live YouTube playback check:
 
 ```powershell
 $env:SUVI_LIVE_YOUTUBE='1'
 npm run smoke
 ```
 
-## Permissions
+</details>
+
+<details>
+<summary><strong>Permission reference</strong></summary>
 
 | Permission | Purpose |
 | --- | --- |
@@ -116,18 +157,16 @@ npm run smoke
 | `alarms` | Support event-driven extension maintenance |
 | All sites | Apply network, cosmetic and link protection on visited pages |
 
-## Privacy
+</details>
 
-Suvi Shield processes URLs and page elements locally. It does not collect browsing history, page content, account information, telemetry or rule-match logs. See [PRIVACY.md](PRIVACY.md) for the complete policy.
+## Privacy and security
 
-## Security
-
-Security issues should be reported privately according to [SECURITY.md](SECURITY.md). Do not include credentials or unrelated browsing data in reports.
+Suvi Shield processes URLs and page elements locally. It does not collect browsing history, page content, account information, telemetry or rule-match logs. Read the [privacy policy](PRIVACY.md) and [security policy](SECURITY.md) for details.
 
 ## Author
 
-Suvi Shield is created and maintained by [vikas0vks](https://github.com/vikas0vks).
+Created and maintained by [vikas0vks](https://github.com/vikas0vks).
 
 ## License
 
-The source code is licensed under GPL-3.0-or-later. Compiled filter data keeps the licenses and attribution requirements of its original projects. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Source code is licensed under GPL-3.0-or-later. Compiled filter data keeps the licenses and attribution requirements of its original projects. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

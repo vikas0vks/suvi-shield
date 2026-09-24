@@ -91,12 +91,19 @@ try {
     const screenshotPath = path.resolve(process.env.AEGIS_SMOKE_SCREENSHOT);
     await mkdir(path.dirname(screenshotPath), { recursive: true });
     await page.setViewport({ width: 1280, height: 900, deviceScaleFactor: 1 });
-    await page.screenshot({ path: screenshotPath, fullPage: true });
+    await page.screenshot({ path: screenshotPath, fullPage: false });
   }
 
   const popup = await browser.newPage();
   await popup.goto(`chrome-extension://${extensionId}/popup/popup.html`, { waitUntil: 'domcontentloaded' });
   await popup.waitForFunction(() => document.querySelector('[data-profile="hard"]')?.getAttribute('aria-checked') === 'true');
+  if (process.env.SUVI_POPUP_SCREENSHOT) {
+    await popup.setViewport({ width: 370, height: 820, deviceScaleFactor: 2 });
+    await new Promise((resolve) => setTimeout(resolve, 150));
+    const screenshotPath = path.resolve(process.env.SUVI_POPUP_SCREENSHOT);
+    await mkdir(path.dirname(screenshotPath), { recursive: true });
+    await popup.screenshot({ path: screenshotPath, fullPage: true });
+  }
   const selectProfile = async (level, expectedRulesets, expectedScripts) => {
     await popup.click(`[data-profile="${level}"]`);
     await popup.waitForFunction(
@@ -146,13 +153,6 @@ try {
   await selectProfile('extreme',
     ['ads_core', 'privacy_core', 'annoyances', 'security', 'tracking_params', 'extreme_network', 'strict_headers'],
     ['aegis-popup-defense', 'aegis-fingerprint-defense', 'aegis-cosmetic-base', 'aegis-capability-lockdown', 'suvi-youtube-clean-player']);
-  if (process.env.SUVI_POPUP_SCREENSHOT) {
-    await new Promise((resolve) => setTimeout(resolve, 150));
-    const screenshotPath = path.resolve(process.env.SUVI_POPUP_SCREENSHOT);
-    await mkdir(path.dirname(screenshotPath), { recursive: true });
-    await popup.setViewport({ width: 370, height: 820, deviceScaleFactor: 2 });
-    await popup.screenshot({ path: screenshotPath, fullPage: true });
-  }
   await popup.close();
 
   const youtubeFixture = await browser.newPage();

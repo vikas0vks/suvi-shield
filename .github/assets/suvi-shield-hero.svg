@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Suvi Shield browser firewall</title>
+  <desc id="desc">A dark teal and blue banner for the Suvi Shield Chromium privacy extension.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06101c"/>
+      <stop offset="0.55" stop-color="#071827"/>
+      <stop offset="1" stop-color="#06111e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#69f4c3"/>
+      <stop offset="0.5" stop-color="#3ed7d4"/>
+      <stop offset="1" stop-color="#339cf4"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10283a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#0a1b2b" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="aura">
+      <stop offset="0" stop-color="#36e6b4" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#26bfb8" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#26bfb8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#83c9e8" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" rx="36" fill="url(#background)"/>
+  <rect x="1" y="1" width="1278" height="638" rx="35" fill="none" stroke="#1e4258" stroke-width="2"/>
+  <rect width="1280" height="640" rx="36" fill="url(#grid)"/>
+  <circle cx="1040" cy="286" r="320" fill="url(#aura)"/>
+  <path d="M0 520C250 430 410 620 710 520S1050 430 1280 520V640H0Z" fill="#0a2131" fill-opacity="0.42"/>
+
+  <g transform="translate(88 88)">
+    <rect width="312" height="40" rx="20" fill="#0d2936" stroke="#21526a"/>
+    <circle cx="22" cy="20" r="5" fill="#59efbd" filter="url(#glow)"/>
+    <text x="40" y="25" fill="#84a9ba" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">OPEN SOURCE CHROMIUM EXTENSION</text>
+  </g>
+
+  <text x="88" y="234" fill="#f4faff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="78" font-weight="800" letter-spacing="-2">SUVI</text>
+  <text x="88" y="312" fill="url(#accent)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="78" font-weight="800" letter-spacing="-2">SHIELD</text>
+  <text x="93" y="362" fill="#a7bdca" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="3">BLOCK ADS. STOP TRACKERS. CONTROL THE PAGE.</text>
+  <text x="93" y="402" fill="#668497" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Local-first protection with a playback-safe YouTube layer.</text>
+
+  <g transform="translate(88 462)">
+    <g>
+      <rect width="176" height="94" rx="15" fill="url(#card)" stroke="#1c4056"/>
+      <text x="20" y="42" fill="#5cebbb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">26,526</text>
+      <text x="20" y="67" fill="#7794a5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.4">NETWORK RULES</text>
+    </g>
+    <g transform="translate(190)">
+      <rect width="160" height="94" rx="15" fill="url(#card)" stroke="#1c4056"/>
+      <text x="20" y="42" fill="#5cebbb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">24</text>
+      <text x="20" y="67" fill="#7794a5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.4">FILTER SOURCES</text>
+    </g>
+    <g transform="translate(364)">
+      <rect width="160" height="94" rx="15" fill="url(#card)" stroke="#1c4056"/>
+      <text x="20" y="42" fill="#5cebbb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">4</text>
+      <text x="20" y="67" fill="#7794a5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.4">PROFILES</text>
+    </g>
+    <g transform="translate(538)">
+      <rect width="184" height="94" rx="15" fill="url(#card)" stroke="#1c4056"/>
+      <text x="20" y="42" fill="#5cebbb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">ZERO</text>
+      <text x="20" y="67" fill="#7794a5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.4">TELEMETRY</text>
+    </g>
+  </g>
+
+  <g transform="translate(874 106)">
+    <circle cx="172" cy="172" r="170" fill="#071724" stroke="#164255" stroke-width="2"/>
+    <circle cx="172" cy="172" r="139" fill="none" stroke="#2ac99e" stroke-opacity="0.16"/>
+    <circle cx="172" cy="172" r="104" fill="none" stroke="#2ac99e" stroke-opacity="0.24"/>
+    <circle cx="172" cy="172" r="72" fill="#0b2531" stroke="#38dbae" stroke-opacity="0.46" stroke-width="2"/>
+    <path d="M172 108L226 128V173C226 219 201 248 172 266C143 248 118 219 118 173V128Z" fill="url(#accent)" filter="url(#glow)"/>
+    <path d="M145 175L163 193L201 151" fill="none" stroke="#062334" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="95" y="306" width="154" height="34" rx="17" fill="#0d302e" stroke="#2bd1a3" stroke-opacity="0.55"/>
+    <circle cx="116" cy="323" r="5" fill="#5af0bb" filter="url(#glow)"/>
+    <text x="131" y="328" fill="#62eebd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="1.5">DEFAULT: HARD</text>
+  </g>
+
+  <text x="1048" y="606" text-anchor="middle" fill="#4c7185" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="1.6">VIKAS0VKS / SUVI-SHIELD</text>
+</svg>
